@@ -315,21 +315,21 @@ const AbputMe = () => {
                   <FaHeart />
                 </div>
                 <h4 className="extra__subtitle">Alumnos contentos</h4>
-                <span className="extra__Quantity">375 000</span>
+                <span className="extra__quantity">375 000</span>
               </article>
               <article className="extra__info">
                 <div className="extra__icon">
                   <FaClock />
                 </div>
                 <h4 className="extra__subtitle">Horas de contenido</h4>
-                <span className="extra__Quantity">8500</span>
+                <span className="extra__quantity">8500</span>
               </article>
               <article className="extra__info">
                 <div className="extra__icon">
                   <FaStar />
                 </div>
                 <h4 className="extra__subtitle">Puntuacion</h4>
-                <span className="extra__Quantity">10</span>
+                <span className="extra__quantity">10</span>
               </article>
             </div>
           </section>

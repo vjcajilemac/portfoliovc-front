@@ -50,7 +50,7 @@ export default function Layout({ children }: any) {
             <nav className="layout__menu">
               <ul className="menu__list">
                 <li className="menu__option_">
-                  <a href="index.html" className="menu__link">
+                  <a href="index.html" className="menu__link ">
                     <div className="menu__icon">
                       <FaHome />
                     </div>
@@ -59,7 +59,7 @@ export default function Layout({ children }: any) {
                   </a>
                 </li>
                 <li className="menu__option_">
-                  <a href="index.html" className="menu__link">
+                  <a href="/about-me" className="menu__link menu__link--active">
                     <div className="menu__icon">
                       <FaUser />
                     </div>
