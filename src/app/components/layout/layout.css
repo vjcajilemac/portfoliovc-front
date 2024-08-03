@@ -277,7 +277,8 @@ body {
 
 /*About me*/
 
-.content__about {
+.content__about,
+.content__resume {
   display: block;
   height: 100%;
   padding: 6rem;
@@ -285,16 +286,19 @@ body {
   overflow: auto;
 }
 
-.about__header {
+.about__header,
+.resume__header {
   margin-bottom: 4.5rem;
   display: inline-block;
 }
-.about__title {
+.about__title,
+.resume__title {
   font-size: 3.2rem;
   position: relative;
 }
 
-.about__title::after {
+.about__title::after,
+.resume__title::after {
   content: "";
   position: absolute;
   top: 20px;
