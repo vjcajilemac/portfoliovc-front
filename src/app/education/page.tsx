@@ -22,7 +22,7 @@ const Curriculum = () => {
             <main className="layout__content">
                 <section className="content__page content__resume">
                     <header className="resume__header">
-                        <h2 className="Resume__title">Estudios</h2>
+                        <h2 className="resume__title">Estudios</h2>
 
                     </header>
                     <div className="resume__container">
@@ -34,7 +34,7 @@ const Curriculum = () => {
                             </header>
 
                             <div className="resume__timelines">
-                                <article className="timelines__items">
+                                <article className="timelines__timeline">
                                     <header className="timeline__header">
                                         <h4 className="timeline__year">2010</h4>
                                         <span className="timeline__company">Universidad De Las Fuerzas Armadas ESPE</span>
@@ -46,7 +46,7 @@ const Curriculum = () => {
                                         <span className="timeline__desciption"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias reiciendis, omnis sunt ratione nemo aperiam magnam. Deleniti, odio reiciendis perspiciatis expedita rem aliquam natus quidem necessitatibus doloribus asperiores quasi fuga. </span>
                                     </div>
                                 </article>
-                                <article className="timelines__items">
+                                <article className="timelines__timeline">
                                     <header className="timeline__header">
                                         <h4 className="timeline__year">2024</h4>
                                         <span className="timeline__company">Udemy</span>
@@ -67,7 +67,7 @@ const Curriculum = () => {
                                 </h2>
                             </header>
                             <div className="resume__timelines">
-                                <article className="timelines__items">
+                                <article className="timelines__timeline">
                                     <header className="timeline__header">
                                         <h4 className="timeline__year">2020 - 2022</h4>
                                         <span className="timeline__company">Pulpo</span>
@@ -79,7 +79,7 @@ const Curriculum = () => {
                                         <span className="timeline__desciption"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias reiciendis, omnis sunt ratione nemo aperiam magnam. Deleniti, odio reiciendis perspiciatis expedita rem aliquam natus quidem necessitatibus doloribus asperiores quasi fuga. </span>
                                     </div>
                                 </article>
-                                <article className="timelines__items">
+                                <article className="timelines__timeline">
                                     <header className="timeline__header">
                                         <h4 className="timeline__year">2023</h4>
                                         <span className="timeline__company">Cogarol</span>

@@ -13,6 +13,8 @@
 
   --color-border-review: #e5e6e7;
   --color-company: #a5a6a7;
+
+  --color-background-certificates: #f5f5f5;
 }
 
 /*General styles*/
@@ -276,6 +278,7 @@ body {
 }
 
 /*About me*/
+/*Esstilos generales*/
 
 .content__about,
 .content__resume {
@@ -316,7 +319,8 @@ body {
   opacity: 0.5;
 }
 
-.title__color {
+.title__color,
+.subtitle__color {
   color: var(--color-secondary);
 }
 
@@ -365,7 +369,8 @@ body {
 .reviews__header,
 .clients__header,
 .prices__header,
-.extra__header {
+.extra__header,
+.resume__subheader {
   display: inline-block;
   padding-right: 1.2rem;
   margin-bottom: 2.5rem;
@@ -375,14 +380,16 @@ body {
 .reviews__title,
 .clients__title,
 .prices__title,
-.extra__title {
+.extra__title,
+.resume__subtitle {
   font-size: 2.1rem;
 }
 .services__title::after,
 .reviews__title::after,
 .clients__title::after,
 .prices__title::after,
-.extra__title::after {
+.extra__title::after,
+.resume__subtitle::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -625,4 +632,219 @@ body {
   font-size: 3.5rem;
   line-height: 5rem;
   color: var(--color-subtitle);
+}
+
+/*CUrriculum*/
+.resume__container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.resume__left {
+  flex-basis: 55%;
+  margin-right: 1.5rem;
+}
+
+.resume__timelines{
+  margin-top: 5rem;
+}
+.timelines__timeline{
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+
+}
+.timeline__header{
+  flex-basis: 30%;
+  text-align: right;
+  padding-right: 2.5rem;
+
+}
+.timeline__year{
+  margin: 3px 0;
+  line-height: 1.9rem;
+  font-size: 1.4rem;
+}
+.timeline__company{
+  display: block;
+  margin: 0;
+  margin-bottom: 0.4rem;/*4px*/
+  font-size: 1.3rem;
+  /*font-weight: lighter;*/
+  color: var(--color-company); 
+}
+
+.timeline__description{
+  width: 70%;
+  padding-left: 2.5rem;
+  padding-right: 1.5rem;
+}
+.timeline__title{
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+
+}
+.timeline__text{
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+
+}
+
+.timeline__divider{
+  position: absolute;
+  top: 0;
+  left: 30%;
+  bottom: -18px;
+  width: 1px;
+  background-color: var(--color-background);
+}
+
+.timeline__divider::before{
+  content:"";
+  position: absolute;
+  margin: 0.4rem 0 0 -0.65rem;
+
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: var(--color-secondary);
+  border-radius: 1rem;
+  opacity: 0.4;
+  
+}
+
+.timeline__divider::after{
+  content:"";
+  position: absolute;
+  margin: 0.59rem 0 0 -0.45rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: var(--color-primary);
+  border: 3px solid var(--color-secondary);
+  border-radius: 1rem;
+  opacity: 1;
+  
+}
+
+/*Curriculum derecha*/
+.resume__right{
+  flex-basis: 43%;
+  padding: 0 1.5rem;
+}
+
+.resume__skils{
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.skills__title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills__text{
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.skills__number{
+ font-size: 1.1rem; 
+ line-height: 1.4rem;
+ margin-bottom: 0.4rem;
+ color: var(--color-subtitle);
+}
+
+.skills__progressbar{
+  /*width: 100%;*/
+  height: 1rem;
+  border: 1px solid var(--color-secondary);
+  border-radius: 1rem;
+  background-color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.skills__percentage{
+  width: 40%;
+  height: 0.8rem;
+  background-color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
+  border-radius: 1rem;
+}
+
+.skills__percentage--p1{width: 90%;}
+.skills__percentage--p2{width: 70%;}
+.skills__percentage--p3{width: 40%;}
+.skills__percentage--p4{width: 30%;}
+
+.knowledges__list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.knowledges__option{
+  padding: 0.3rem 1rem;
+  margin: 0.3rem;
+  font-size: 1.4rem;
+  background-color: var(--color-secondary);
+  border-radius: 0.3rem;
+  color: var(--color-primary);
+}
+
+.certificates__container{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem; /*Espacio entre items*/
+  flex-wrap: wrap;/*Maneja varios items en un solo row*/
+}
+
+.certificates__certificate{
+  flex-basis: calc(50% - 1.5rem) ; /*Limita a los hijos de certificates__container a ocupar maximo el 50% de su padre*/
+  border: 2px solid var(--color-border-review);
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.certificate__logo{
+  width: 15rem;
+  height: 100%;
+  padding: 2.5rem;
+  background-color: var(--color-background-certificates);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.certificate__image{
+  width: 100%;
+}
+
+.certificate__content{
+ padding: 2rem 2.5rem;
+}
+
+.certificate__title{
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.certificate__id{
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 1.3rem;
+  color: var(--color-subtitle);
+
+}
+
+.certificate__date{
+  font-size: 1rem;
+  color: var(--color-subtitle);
+  opacity: 0.9;
+
 }
