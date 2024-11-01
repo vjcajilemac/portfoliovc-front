@@ -72,7 +72,7 @@ export default function Layout({ children }: any) {
                     <div className="menu__icon">
                       <FaGraduationCap />
                     </div>
-                    <span className="menu__overlay">Estudios</span>
+                    <span className="menu__overlay">Curriculum</span>
                   </a>
                 </li>
                 <li className="menu__option_">

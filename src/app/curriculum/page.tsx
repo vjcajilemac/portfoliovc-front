@@ -1,20 +1,8 @@
 import type { ReactElement } from "react";
 import Layout from "../components/layout/layout";
-import type { NextPageWithLayout } from "../pages/_app";
 import Image from "next/image";
 import "../../app/scroll.css";
-import {
-  FaChalkboardTeacher,
-  FaClock,
-  FaCode,
-  FaHeart,
-  FaHtml5,
-  FaQuoteRight,
-  FaStar,
-  FaTerminal,
-  FaTimes,
-  FaTimesCircle,
-} from "react-icons/fa";
+
 
 const Curriculum = () => {
   return (
