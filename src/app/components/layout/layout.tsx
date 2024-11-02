@@ -17,6 +17,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import Head from "next/head";
 
 export default function Layout({ children }: any) {
   /*const { data, error } = useSWR("/api/navigation");
@@ -24,9 +25,12 @@ export default function Layout({ children }: any) {
   if (error) return <div>Failed to load</div>;
   if (!data) return <div>Loading...</div>;*/
 
-  console.log("sad");
+
   return (
     <>
+    <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1" />
+      </Head>
       <div className="layout">
         {/*barra lateral - indo user*/}
         <aside className="layout__aside">
