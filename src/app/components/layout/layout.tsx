@@ -2,6 +2,7 @@
 import useSWR from "swr";
 import "./reset.css";
 import "./layout.css";
+import "./layout-responsive.css";
 /*import Navbar from "./navbar";
 import Footer from "./footer";*/
 import Image from "next/image";
