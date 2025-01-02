@@ -2,22 +2,20 @@
 import useSWR from "swr";
 import "./reset.css";
 import "./layout.css";
+import "./layout-responsive.css";
 /*import Navbar from "./navbar";
 import Footer from "./footer";*/
 import Image from "next/image";
 import {
-  FaHome,
-  FaUser,
-  FaGraduationCap,
-  FaBriefcase,
-  FaBook,
-  FaEnvelope,
+
   FaYoutube,
   FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import Head from "next/head";
+import { Sidebar } from "../sidebar";
+
 
 export default function Layout({ children }: any) {
   /*const { data, error } = useSWR("/api/navigation");
@@ -50,61 +48,7 @@ export default function Layout({ children }: any) {
               <h4 className="user-info__job">Ingeniero en software</h4>
             </div>
 
-            {/*Menu layout menu - user-info__menu*/}
-            <nav className="layout__menu">
-              <ul className="menu__list">
-                <li className="menu__option_">
-                  <a href="index.html" className="menu__link ">
-                    <div className="menu__icon">
-                      <FaHome />
-                    </div>
-
-                    <span className="menu__overlay">Home</span>
-                  </a>
-                </li>
-                <li className="menu__option_">
-                  <a href="/about-me" className="menu__link menu__link--active">
-                    <div className="menu__icon">
-                      <FaUser />
-                    </div>
-
-                    <span className="menu__overlay">Sobre mi</span>
-                  </a>
-                </li>
-                <li className="menu__option_">
-                  <a href="index.html" className="menu__link">
-                    <div className="menu__icon">
-                      <FaGraduationCap />
-                    </div>
-                    <span className="menu__overlay">Curriculum</span>
-                  </a>
-                </li>
-                <li className="menu__option_">
-                  <a href="index.html" className="menu__link">
-                    <div className="menu__icon">
-                      <FaBriefcase />
-                    </div>
-                    <span className="menu__overlay">Portafolio</span>
-                  </a>
-                </li>
-                <li className="menu__option_">
-                  <a href="index.html" className="menu__link">
-                    <div className="menu__icon">
-                      <FaBook />
-                    </div>
-                    <span className="menu__overlay">Blog</span>
-                  </a>
-                </li>
-                <li className="menu__option_">
-                  <a href="index.html" className="menu__link">
-                    <div className="menu__icon">
-                      <FaEnvelope />
-                    </div>
-                    <span className="menu__overlay">Contactos</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            <Sidebar/>
 
             {/*social network */}
             <div className="user-info__user-links">

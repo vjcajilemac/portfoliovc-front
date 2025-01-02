@@ -14,6 +14,7 @@ import {
   FaTerminal,
   FaTimes,
   FaTimesCircle,
+  FaBriefcase
 } from "react-icons/fa";
 
 const AbputMe = () => {
@@ -74,7 +75,7 @@ const AbputMe = () => {
             <div className="services__container">
               <article className="services__service">
                 <div className="service__icon">
-                  <FaCode />
+                  <FaBriefcase />
                 </div>
                 <div className="service__content">
                   <h3 className="service__title">Programacion</h3>
@@ -89,7 +90,7 @@ const AbputMe = () => {
 
               <article className="services__service">
                 <div className="service__icon">
-                  <FaChalkboardTeacher />
+                  <FaBriefcase />
                 </div>
                 <div className="service__content">
                   <h3 className="service__title">Formacion</h3>
@@ -103,7 +104,7 @@ const AbputMe = () => {
               </article>
               <article className="services__service">
                 <div className="service__icon">
-                  <FaHtml5 />
+                  <FaBriefcase />
                 </div>
                 <div className="service__content">
                   <h3 className="service__title">Desarrollo Web</h3>
@@ -117,7 +118,7 @@ const AbputMe = () => {
               </article>
               <article className="services__service">
                 <div className="service__icon">
-                  <FaTerminal />
+                  <FaBriefcase />
                 </div>
                 <div className="service__content">
                   <h4 className="service__title">Administracion</h4>
