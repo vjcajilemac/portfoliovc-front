@@ -6,16 +6,10 @@ import "./layout-responsive.css";
 /*import Navbar from "./navbar";
 import Footer from "./footer";*/
 import Image from "next/image";
-import {
-
-  FaYoutube,
-  FaLinkedin,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaYoutube, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import Head from "next/head";
 import { Sidebar } from "../sidebar";
-
 
 export default function Layout({ children }: any) {
   /*const { data, error } = useSWR("/api/navigation");
@@ -23,11 +17,13 @@ export default function Layout({ children }: any) {
   if (error) return <div>Failed to load</div>;
   if (!data) return <div>Loading...</div>;*/
 
-
   return (
     <>
-    <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1" />
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximun-scale=1"
+        />
       </Head>
       <div className="layout">
         {/*barra lateral - indo user*/}
@@ -37,7 +33,7 @@ export default function Layout({ children }: any) {
             <div className="user-info__general">
               <div className="user-info__container-image">
                 <Image
-                  src="/img/default-user.jpg"
+                  src="/img/profile-image-white-background.png"
                   width="150"
                   height="150"
                   className="user-info__image"
@@ -48,7 +44,7 @@ export default function Layout({ children }: any) {
               <h4 className="user-info__job">Ingeniero en software</h4>
             </div>
 
-            <Sidebar/>
+            <Sidebar />
 
             {/*social network */}
             <div className="user-info__user-links">

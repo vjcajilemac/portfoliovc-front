@@ -17,7 +17,7 @@ export const Sidebar = () => {
   const router = usePathname();
 
   const menuItems = [
-    { name: "Inicio", href: "/home", icon: <FaHome />},
+    { name: "Inicio", href: "/home", icon: <FaHome /> },
     { name: "Sobre mí", href: "/about-me", icon: <FaUser /> },
     { name: "Curriculum", href: "/curriculum", icon: <FaGraduationCap /> },
     { name: "Portafolio", href: "/portfolio", icon: <FaBriefcase /> },
@@ -39,7 +39,7 @@ export const Sidebar = () => {
                 }`}
               >
                 <div className="menu__icon">{item.icon}</div>
-              <span className="menu__overlay">{item.name}</span>
+                <span className="menu__overlay">{item.name}</span>
               </Link>
             </li>
           ))}
@@ -49,7 +49,8 @@ export const Sidebar = () => {
   );
 };
 
-{/*
+{
+  /*
 import React from "react";
 
 import {
@@ -134,4 +135,5 @@ export const Sidebar = () => {
 
     
 
-    */}
+    */
+}

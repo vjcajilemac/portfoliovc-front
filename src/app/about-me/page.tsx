@@ -16,17 +16,25 @@ import {
   FaTimesCircle,
   FaBriefcase
 } from "react-icons/fa";
+import Title from "../components/General/Title";
 
 const AbputMe = () => {
   return (
     <Layout>
       <main className="layout__content">
         <section className="content__page content__about">
+          <Title>
+            Sobre <span className="title__color">mi</span>
+          </Title>
+          {/*
+          
           <header className="about__header">
             <h2 className="about__title">
               Sobre <span className="title__color">mi</span>
             </h2>
           </header>
+          
+          */}
           <section className="about__personal-info">
             <article className="personal-info__bio">
               <p className="personal-info_description">
